@@ -20,7 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 ---
-name: 'xcop'
+name: 'xcop-action'
 description: 'Xcop linter GitHub action'
 branding:
   icon: alert-triangle
