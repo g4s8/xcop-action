@@ -1,11 +1,10 @@
 This GitHub action helps you run [XCOP](https://github.com/yegor256/xcop) XML linter.
 
-Add `g4s8/xcop-action@master` (or use version tag instead of `master`)
-after `actions/checkout@v2` action.
+Add `g4s8/xcop-action@master` (or use version tag instead of `master`) after `actions/checkout@v2` action:
 
 ```yaml
 ---
-name: XCOP linter
+name: xcop
 on:
   push:
     branches:
