@@ -11,7 +11,7 @@ on:
     branches:
       - master
   pull_request:
-    brranches:
+    branches:
       - master
 jobs:
   build:
