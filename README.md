@@ -21,7 +21,8 @@ jobs:
 ```
 
 It's possible to customize it specifying the location of
-the license (`./LICENSE.txt` by default) and the location
+the license (`./LICENSE.txt` by default) and the
+[glob](https://en.wikipedia.org/wiki/Glob_%28programming%29) location
 of all files to be checked (`**/*.xml` by default):
 
 ```yaml
