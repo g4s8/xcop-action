@@ -1,9 +1,4 @@
-# xcop-action
-Xcop GitHub action
-
-[XCOP](https://github.com/yegor256/xcop) XML linter as GitHub action.
-
-## Usage
+This GitHub action helps you run [XCOP](https://github.com/yegor256/xcop) XML linter.
 
 Add `g4s8/xcop-action@master` (or use version tag instead of `master`)
 after `actions/checkout@v2` action.
@@ -11,7 +6,7 @@ after `actions/checkout@v2` action.
 ```yaml
 ---
 name: XCOP linter
-"on":
+on:
   push:
     branches:
       - master
@@ -20,15 +15,15 @@ name: XCOP linter
       - master
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
       - uses: g4s8/xcop-action@master
 ```
 
-To customize it use `license` or `files` inputs:
- - license - location of license file (default `LICENSE.txt`)
- - files - files to check (default `pom.xml`)
+It's possible to customize it specifying the location of
+the license (`./LICENSE.txt` by default) and the location
+of all files to be checked (`**/*.xml` by default):
 
 ```yaml
 - uses: g4s8/xcop-action@master
