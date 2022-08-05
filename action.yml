@@ -29,11 +29,11 @@ inputs:
   license:
     description: 'License file location'
     required: true
-    default: 'LICENSE.txt'
+    default: './LICENSE.txt'
   files:
     description: 'Files to check'
     required: true
-    default: 'pom.xml'
+    default: '**/*.xml'
 runs:
   using: 'docker'
   image: Dockerfile

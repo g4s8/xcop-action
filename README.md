@@ -28,7 +28,8 @@ jobs:
 
 To customize it use `license` or `files` inputs:
  - license - location of license file (default `LICENSE.txt`)
- - files - files to check (default `pom.xml`)
+ - files - [glob](https://en.wikipedia.org/wiki/Glob_%28programming%29) location
+ of all files to be checked (`**/*.xml` by default)
 
 ```yaml
 - uses: g4s8/xcop-action@master
