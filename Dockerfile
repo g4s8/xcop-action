@@ -1,4 +1,4 @@
-FROM ruby:2.6
+FROM ruby:3.0
 
 LABEL "repository"="https://github.com/g4s8/xcop-action"
 LABEL "maintainer"="Kirill Che."
