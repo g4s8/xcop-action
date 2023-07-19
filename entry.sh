@@ -3,7 +3,10 @@
 set -euo pipefail
 
 license=$1
-glob=$2
 
 cd ${GITHUB_WORKSPACE}
-xcop --license="${license}" $(find . -path "${glob}")
+
+for glob in $2
+do
+    xcop --license="${license}" $(find . -path "${glob}")
+done
