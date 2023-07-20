@@ -29,11 +29,14 @@ jobs:
 To customize it use `license` or `files` inputs:
  - license - location of license file (default `LICENSE.txt`)
  - files - [glob](https://en.wikipedia.org/wiki/Glob_%28programming%29) location
- of all files to be checked (`**/*.xml` by default)
+ of all files to be checked separated by `\n` (default globs are: `**/*.xml`, `**/*.xsl`, `**/*.xsd`, `**/*.xhtml` )
 
 ```yaml
 - uses: g4s8/xcop-action@master
   with:
     license: MY_LICENSE.txt
-    files: "src/*.xml"
+    files: |
+      **/*.xml
+      **/*.xsl
+      **/*.ext
 ```
