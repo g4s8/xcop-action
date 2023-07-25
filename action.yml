@@ -33,7 +33,11 @@ inputs:
   files:
     description: 'Files to check'
     required: true
-    default: '**/*.xml'
+    default: |
+      **/*.xml
+      **/*.xsl
+      **/*.xsd
+      **/*.xhtml
 runs:
   using: 'docker'
   image: Dockerfile
