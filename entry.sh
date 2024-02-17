@@ -11,7 +11,7 @@ set -euo pipefail
 
 license=$1
 
-cd ${GITHUB_WORKSPACE}
+cd "${GITHUB_WORKSPACE}"
 
 if [ "$3" == 'true' ]; then
   go_through "$2" '--fix'
