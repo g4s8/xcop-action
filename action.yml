@@ -38,9 +38,15 @@ inputs:
       **/*.xsl
       **/*.xsd
       **/*.xhtml
+  fix:
+    description: 'Flag for xcop autoformatting'
+    required: false
+    default: |
+      false
 runs:
   using: 'docker'
   image: Dockerfile
   args:
     - "${{ inputs.license }}"
     - "${{ inputs.files }}"
+    - "${{ inputs.fix }}"
